@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Ngoc Thach</h1>
-<h3 align="center">A passionate Machine Learning Engineer from Vietnam</h3>
+<h3 align="center">A passionate AI Engineer from Vietnam</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ngocthach&label=Profile%20views&color=0e75b6&style=flat" alt="ngocthach" /> </p>
 
-- 🔭 I’m currently working on [chat bot platform at MoMo](https://momo.vn/)
+- 🔭 I’m currently working for [Vinamilk](https://new.vinamilk.com.vn/)
 
 - 🌱 I’m currently learning **deep learning, blockchain, rust**
 
