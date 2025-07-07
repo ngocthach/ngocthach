@@ -14,7 +14,10 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:
+                radial-gradient(circle at 20% 50%, #74b9ff 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, #00b894 0%, transparent 50%),
+                linear-gradient(135deg, #0984e3 0%, #74b9ff 50%, #0984e3 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -41,7 +44,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 50%, #00b894 100%);
             padding: 40px 30px;
             text-align: center;
             color: white;
@@ -58,7 +61,15 @@
             align-items: center;
             justify-content: center;
             font-size: 48px;
-            color: #667eea;
+            color: #74b9ff;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .name {
@@ -124,10 +135,10 @@
         }
 
         .link-item:hover {
-            background: #667eea;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 5px 15px rgba(116, 185, 255, 0.3);
         }
 
         .link-icon {
@@ -173,7 +184,7 @@
         }
 
         .skill-item:hover {
-            background: #667eea;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
             color: white;
             transform: translateY(-2px);
         }
@@ -218,13 +229,13 @@
     <div class="container">
         <div class="header">
             <div class="profile-image">
-                <i class="fas fa-user"></i>
+                <img src="thach_avatar.png" alt="Le Ngoc Thach" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-user\'></i>';">
             </div>
             <div class="name">Lê Ngọc Thạch</div>
             <div class="title">Lead AI Engineer at MoMo</div>
             <div class="stats">
                 <div class="stat">
-                    <div class="stat-number">5+</div>
+                    <div class="stat-number">10+</div>
                     <div class="stat-label">Years Exp</div>
                 </div>
                 <div class="stat">
@@ -258,7 +269,7 @@
                 
                 <a href="https://github.com/ngocthach/ML-for-Everyone" class="link-item" target="_blank">
                     <div class="link-icon"><i class="fab fa-github"></i></div>
-                    <div class="link-text">GitHub Projects</div>
+                    <div class="link-text">ML for Everyone</div>
                 </a>
                 
                 <a href="https://ngocthach.github.io/" class="link-item" target="_blank">
@@ -303,16 +314,40 @@
                         <div class="skill-name">Kotlin</div>
                     </div>
                     <div class="skill-item">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" class="skill-icon">
-                        <div class="skill-name">Docker</div>
+                        <div class="skill-icon" style="background: linear-gradient(45deg, #ff6b6b, #4ecdc4); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px;">LLM</div>
+                        <div class="skill-name">LLM</div>
                     </div>
                     <div class="skill-item">
-                        <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" class="skill-icon">
-                        <div class="skill-name">K8s</div>
+                        <div class="skill-icon" style="background: linear-gradient(45deg, #667eea, #764ba2); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px;">RAG</div>
+                        <div class="skill-name">RAG</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon" style="background: linear-gradient(45deg, #00b894, #00cec9); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;"><i class="fas fa-robot"></i></div>
+                        <div class="skill-name">Chatbot</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="Redis" class="skill-icon">
+                        <div class="skill-name">Redis</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="skill-icon">
+                        <div class="skill-name">PostgreSQL</div>
                     </div>
                     <div class="skill-item">
                         <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="GCP" class="skill-icon">
                         <div class="skill-name">GCP</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="skill-icon">
+                        <div class="skill-name">AWS</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="Elasticsearch" class="skill-icon">
+                        <div class="skill-name">Elasticsearch</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon" style="background: linear-gradient(45deg, #dc143c, #ff6347); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10px;">QD</div>
+                        <div class="skill-name">Qdrant</div>
                     </div>
                 </div>
             </div>
@@ -321,7 +356,7 @@
         <div class="footer">
             <p>👋 Thanks for visiting my profile!</p>
             <p style="margin-top: 5px; font-size: 12px; opacity: 0.7;">
-                <img src="https://komarev.com/ghpvc/?username=ngocthach&label=Profile%20views&color=667eea&style=flat" alt="Profile views">
+                <img src="https://komarev.com/ghpvc/?username=ngocthach&label=Profile%20views&color=74b9ff&style=flat" alt="Profile views">
             </p>
         </div>
     </div>
