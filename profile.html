@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngoc Thach - AI Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 0 auto 20px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #667eea;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .bio {
+            text-align: center;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .link-item:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .link-text {
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+
+        .skills-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 10px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .skill-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 8px;
+        }
+
+        .skill-name {
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-image">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="name">Lê Ngọc Thạch</div>
+            <div class="title">Lead AI Engineer at MoMo</div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Exp</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">AI/ML</div>
+                    <div class="stat-label">Specialist</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">Vietnam</div>
+                    <div class="stat-label">Based</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="bio">
+                🔭 Currently working at <strong>MoMo</strong><br>
+                🌱 Learning <strong>Machine Learning, Deep Learning, Blockchain, LLM</strong><br>
+                ⚡ Fun fact: <strong>I'm still young to learn more</strong>
+            </div>
+
+            <div class="links">
+                <a href="https://lnthach.com" class="link-item" target="_blank">
+                    <div class="link-icon"><i class="fas fa-globe"></i></div>
+                    <div class="link-text">Personal Website</div>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/ngocthach1207/" class="link-item" target="_blank">
+                    <div class="link-icon"><i class="fab fa-linkedin"></i></div>
+                    <div class="link-text">LinkedIn Profile</div>
+                </a>
+                
+                <a href="https://github.com/ngocthach/ML-for-Everyone" class="link-item" target="_blank">
+                    <div class="link-icon"><i class="fab fa-github"></i></div>
+                    <div class="link-text">GitHub Projects</div>
+                </a>
+                
+                <a href="https://ngocthach.github.io/" class="link-item" target="_blank">
+                    <div class="link-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="link-text">My Resume</div>
+                </a>
+                
+                <a href="https://www.tiktok.com/@ngocthach.ai" class="link-item" target="_blank">
+                    <div class="link-icon"><i class="fab fa-tiktok"></i></div>
+                    <div class="link-text">TikTok Channel</div>
+                </a>
+                
+                <a href="https://www.facebook.com/ngocthach1207/" class="link-item" target="_blank">
+                    <div class="link-icon"><i class="fab fa-facebook"></i></div>
+                    <div class="link-text">Facebook Profile</div>
+                </a>
+                
+                <a href="mailto:thach.le.momo@gmail.com?subject=My%20idea" class="link-item">
+                    <div class="link-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="link-text">Contact Me</div>
+                </a>
+                
+                <a href="https://t.me/thach_lam_ai" class="link-item" target="_blank">
+                    <div class="link-icon"><i class="fab fa-telegram"></i></div>
+                    <div class="link-text">Telegram Group</div>
+                </a>
+            </div>
+
+            <div class="skills">
+                <div class="skills-title">Technologies & Tools</div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="skill-icon">
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" class="skill-icon">
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="Kotlin" class="skill-icon">
+                        <div class="skill-name">Kotlin</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" class="skill-icon">
+                        <div class="skill-name">Docker</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes" class="skill-icon">
+                        <div class="skill-name">K8s</div>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="GCP" class="skill-icon">
+                        <div class="skill-name">GCP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>👋 Thanks for visiting my profile!</p>
+            <p style="margin-top: 5px; font-size: 12px; opacity: 0.7;">
+                <img src="https://komarev.com/ghpvc/?username=ngocthach&label=Profile%20views&color=667eea&style=flat" alt="Profile views">
+            </p>
+        </div>
+    </div>
+</body>
+</html>
